@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React  from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, clearCart, getCartTotal, addToCart } from '../../slice/cartSlice';
-import { formatPrice } from '../../utils/helpers';
+import {  clearCart } from '../../slice/cartSlice';
 import CartItem from './CartItem/CartItem';
 import Cartreceipt from './CartItem/Cartreceipt';
 
@@ -13,7 +12,7 @@ import classNames from 'classnames';
 
 const Cartpage = () => {
   const dispatch = useDispatch();
-  const {data:cartProducts,totalItems, totalAmount, deliveryCharge} = useSelector((state) => state.cart)
+  const {data:cartProducts,totalItems, deliveryCharge} = useSelector((state) => state.cart)
   const emptyCartMsg = 'No Items Found!';  
   return (
     <section className={styles.cart_page_section}>

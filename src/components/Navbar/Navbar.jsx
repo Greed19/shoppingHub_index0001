@@ -25,7 +25,7 @@ const Navbar = () => {
   useEffect(() => {
     dispatch(fetchCategories());
     dispatch(getCartTotal())
-  },[])
+  },[dispatch])
   
   return (
     <section className={styles.header_section}>

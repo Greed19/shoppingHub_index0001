@@ -1,9 +1,7 @@
 import React from 'react';
 
 // helpers
-import {useDispatch, useSelector} from 'react-redux';
-import { setModalData, setIsModalVisible } from '../../slice/modalSlice';
-import { formatPrice } from '../../utils/helpers';
+import {useSelector} from 'react-redux';
 import {STATUS} from '../../utils/status';
 
 // components
@@ -16,8 +14,6 @@ import Loader from '../Loader/Loader';
 import styles from './product.module.scss';
 
 const Productlist = ({product, status}) => {
-
-const dispatch = useDispatch();
 const {isModalVisible} = useSelector((state) => state.modal)
 
 
@@ -37,17 +33,3 @@ if(status === STATUS.ERROR) return (<Error/>)
 }
 
 export default Productlist
-
-
-      {/* <div className={styles.product_list_map}>
-        {
-            product.map((single,sIndex) => (
-              <div className={styles.productlist_item} onClick={() => handleModalVisible(single)}>
-                <img className={styles.productlist_img} src={single.images[0]} alt='item' />
-                <div className={styles.productlist_name}>{single.category.name}</div>
-                <h6 className={styles.productlist_title}>{single.title}</h6>
-                <h5 className={styles.productlist_price}>{formatPrice(single.price)}</h5>
-              </div>
-            ))
-          }
-      </div> */}

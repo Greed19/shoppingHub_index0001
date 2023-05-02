@@ -9,8 +9,6 @@ import styles from './grid.module.scss';
 const GridProducts = ({product}) => {
 
     const dispatch = useDispatch();
-    const {isModalVisible} = useSelector((state) => state.modal)
-
     const handleModalVisible = (product) => {
         dispatch(setModalData(product))
         dispatch(setIsModalVisible(true))

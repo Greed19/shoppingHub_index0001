@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { formatPrice } from '../../../utils/helpers';
 
 import styles from './cartreceipt.module.scss'

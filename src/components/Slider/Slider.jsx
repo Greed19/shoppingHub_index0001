@@ -21,7 +21,7 @@ const Slider = () => {
         return () => {
             clearInterval(bannerTimer)
         }
-    },[count])
+    },[count, bannerArr.length])
 
   return (
     <section className={styles.slider_container}>

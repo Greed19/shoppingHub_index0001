@@ -33,7 +33,7 @@ useEffect(() => {
   dispatch(fetchProductsByCategory(5,'all'));
   setUsedId(tempId)
   setPath(localStorage.getItem('catName'))
-},[location.pathname])
+},[location.pathname, dispatch, tempId])
 // useEffect(() => {
 //   const newUrl = location.pathname.split('/')
 //   const newId = newUrl[newUrl.length-1]

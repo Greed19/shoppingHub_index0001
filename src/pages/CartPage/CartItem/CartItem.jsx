@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {RiSubtractFill} from 'react-icons/ri';
 import {AiOutlinePlus,AiFillDelete} from 'react-icons/ai';
 import { formatPrice } from '../../../utils/helpers';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import classNames from 'classnames';
 import styles from './cartitem.module.scss';
 import { removeFromCart, toggleCartQty } from '../../../slice/cartSlice';

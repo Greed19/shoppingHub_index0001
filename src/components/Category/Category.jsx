@@ -1,6 +1,5 @@
 import React from 'react';
 import { STATUS } from '../../utils/status';
-import {Link} from 'react-router-dom';
 import Error from '../Error/Error';
 import Loader from '../Loader/Loader';
 

@@ -14,7 +14,7 @@ import styles from './singleproduct.module.scss';
 const Singleproduct = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
-  const {data: modalData, isModalVisible} = useSelector((state) => state.modal)  
+  const {data: modalData} = useSelector((state) => state.modal)  
   const handleCloseModal = () => {
     dispatch(setIsModalVisible(false))
   }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 //category
 import { fetchCategories, fetchProductsByCategory } from '../../slice/categorySlice';
@@ -27,7 +27,7 @@ const HomePage = () => {
     dispatch(fetchProductsByCategory(3,'all'));
     dispatch(fetchProductsByCategory(4,'all'));
     dispatch(fetchProductsByCategory(5,'all'));
-  },[])
+  },[dispatch])
 
 
   return (
