@@ -1,0 +1,35 @@
+@import '/src/app.module.scss';
+
+.category_main_container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 size(40);    
+
+    .nav_locator{
+        color: $second-blue;
+        display: flex;
+        align-items: center;
+        height: size(26);
+        text-align: center;
+        padding: size(20) 0;        
+
+        .home_btn{
+            cursor: pointer;
+
+            .icon_home{
+                color: $second-blue;
+                height: size(16);
+            }
+        }
+        .right_arrow{
+            height: size(16);
+        }
+        .nav_name{
+            font-size: size(14);
+            display: inline-block;
+            text-align: center;
+            padding: size(2) 0 0;
+        }
+    }
+
+}

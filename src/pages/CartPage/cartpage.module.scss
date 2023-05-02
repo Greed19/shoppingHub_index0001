@@ -1,0 +1,60 @@
+@import '/src/app.module.scss';
+
+
+.cart_page_section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 size(30);
+    background-color: $ghost;
+
+    .nav_locator{
+        color: $second-blue;
+        display: flex;
+        align-items: center;
+        height: size(26);
+        text-align: center;
+
+        .home_btn{
+            cursor: pointer;
+
+            .icon_home{
+                color: $second-blue;
+                height: size(16);
+            }
+        }
+        .right_arrow{
+            height: size(16);
+        }
+        .nav_name{
+            font-size: size(14);
+            display: inline-block;
+            text-align: center;
+            padding: size(2) 0 0;
+        }
+    }
+
+    .cart_container{
+        background-color: $ghost;
+        display: flex;
+        padding: size(50) 0;
+
+
+        .clearBtn{
+            width: size(110);
+            height: size(33);
+            padding: size(3) size(14);
+            border-radius: size(4);
+            background-color: $red;
+            color: $white;
+            cursor: pointer;
+            font-size: size(16);
+        }
+        .off{
+            display: none;
+        }
+
+    }
+
+
+}

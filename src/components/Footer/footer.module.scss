@@ -1,0 +1,26 @@
+@import '/src/app.module.scss';
+
+.footer_container{
+    height: size(265);
+    width: 100vw;
+    display: grid;
+    background-color: $black;
+    color: $white;
+    padding: size(50);
+
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: size(40);
+    row-gap: size(40);
+
+    .link{
+     
+        .title{
+            font-size: size(17);
+            font-weight: 600;
+        }
+
+        .link_item{
+            font-size: size(14);
+        }
+    }
+}

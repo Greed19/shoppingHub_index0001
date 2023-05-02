@@ -1,0 +1,82 @@
+@function size($val){
+    $size: $val / 16 * 1rem;
+    @return $size
+}
+
+// variables
+$black: #000;
+$white: #FFF;
+$primary-blue: #103755;
+$gold: #eeb808;
+$second-blue: #707b8e;
+$primary-green: #63766b;
+$ghost: #f8f8fa;
+$dark: #212529;
+$red: #CE4F4B;
+$fnt-base: 'Poppins', sans-serif;
+$transition: all 300ms linear;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    
+}
+html{
+    // font-size: 10px;
+    // font-size: 4.2666666666666666667 vw !important;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: $fnt-base;
+    color: $black;
+    user-select: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    // letter-spacing: var();
+    text-transform: capitalize;
+}
+
+img {
+    width: 100%;
+    // display: block;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.8rem;   
+}
+
+input,
+textarea,
+select
+    {
+    outline: 0;
+    border: none;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+
+.shopping_hub_page{   
+    overflow-x: hidden; 
+}

@@ -1,0 +1,70 @@
+@import '/src/app.module.scss';
+
+
+.grid_map{
+    display: grid;
+    column-gap: size(20);
+    row-gap: size(40);
+
+    .grid_item{
+        position: relative;
+        width: size(240);
+        display: flex;
+        flex-direction: column;
+        padding: size(20);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+        border-radius: size(10);            
+
+        .grid_img{
+            width: size(204);
+            height: size(204);
+            margin: 0 auto;
+            border-radius: size(10);
+        }
+        .grid_name{
+            position: absolute;
+            top: size(30);
+            right: size(30);
+            background-color: $gold;
+            color: $white;
+            font-size: size(13);
+            padding: 0 size(8);
+            border-radius: size(8);
+            height: size(20);
+        }
+        .grid_title{
+            font-size: size(15);
+            padding: size(8) 0;
+            color: $primary-green;
+        }
+        .grid_price{
+            font-size: size(18);
+            color: $primary-blue;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: size(20);
+    }
+
+    @media screen and (min-width: 576px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: size(20);
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: size(20);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: size(20);
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: size(20);
+    }
+}

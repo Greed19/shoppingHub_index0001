@@ -1,0 +1,15 @@
+@import '/src/app.module.scss';
+
+
+.error_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    img{
+        width: size(100);
+        height: size(100);
+    }
+}

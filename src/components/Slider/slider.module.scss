@@ -1,0 +1,16 @@
+@import '/src/app.module.scss';
+
+.slider_container{
+    height: size(280);    
+    overflow: hidden;
+
+    .banner_container{
+        width: fit-content;
+        display: flex;        
+        height: 100%;
+        .banner{
+            height: 100%;
+            width: 100vw;          
+        }
+    }
+}

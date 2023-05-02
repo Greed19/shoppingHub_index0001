@@ -1,0 +1,123 @@
+@import '/src/app.module.scss';
+
+.single_modal_container{
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.03);
+    z-index: 99;
+    color: $primary-blue;
+
+    .modal_container{
+        position: relative;
+        display: grid;
+        background-color: #FFF;
+        height: size(481);
+        width: size(921);
+        z-index: 20;
+        border-radius: size(10);
+        grid-template-columns: repeat(2, 1fr);
+
+        .closeBtn{
+            position: absolute;
+            top: size(-12);
+            right: size(-10);
+            z-index: 100;
+            height: size(24);
+            width: size(24);
+            background-color: $black;            
+            color: $white;
+            border-radius: 50%;
+            border: none;
+            row-gap: size(20);
+
+            &:hover{
+                color: $gold;
+                background-color: $white;
+            }
+        }
+
+        .left_modal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .single_img{
+                width: 80%;
+                height: 80%;
+                border-radius: size(10);
+            }
+        }
+
+        .right_modal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .modal_title{
+                font-size: size(22);
+            }
+            .modal_desc{
+                font-size: size(16);
+            }
+            .modal_price{
+                color: $black;
+                font-size: size(24);
+                border-bottom: 1px dashed $second-blue;
+                width: calc(100% - size(20));
+            }
+            // .modal_line{
+            //     width: 90%;
+            //     height: size(2);
+            //     background-color: $primary-blue;
+            // }
+
+            .modal_qty{
+                font-size: size(16);
+                color: $primary-green;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: fit-content;
+                margin: size(20) 0;
+                .btn_qty{
+                    height: size(32);
+                    width: size(32);
+                    margin: 0 size(20);                  
+                }
+                .deactivate{
+                    opacity: 0.5;
+                }
+            }
+
+            .add_to_cart{
+                background-color: $primary-blue;
+                color: $white;
+                width: size(163);
+                height: size(43);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: size(10);
+                font-size: size(18);
+
+                .modal_cart{
+                    color: $white;
+                    margin: 0 size(10);
+                }
+            }
+        }
+        
+
+        @media screen and (min-width: 800px ) {
+            grid-template-columns: repeat(1, fr);
+            column-gap: size(40);
+            height: auto;
+        }
+    }
+}

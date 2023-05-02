@@ -1,0 +1,60 @@
+@import '/src/app.module.scss';
+
+
+.receipt_container{
+    width: size(407);
+    min-height: size(420);
+    display: flex;
+    flex-direction: column;    
+    color: $second-blue;
+    position: fixed;
+    top: 30%;    
+    right: size(60);
+    background-color: $white;   
+    border-radius: size(10); 
+
+    .order_summary{
+        font-size: size(20);
+        padding: 0 size(10) size(12);
+        border-bottom: 0.5px solid rgba(0,0,0,0.5);
+    }
+
+    .details_container{
+        display: flex;
+        flex-direction: column;
+        font-size: size(16);
+        padding: size(16) size(10);
+
+        .order_details{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span{            
+            font-weight: 700;
+        }
+    }
+
+    .proceed_container{
+        display: flex;
+        flex-direction: column;
+        border-top: 0.5px solid rgba(0,0,0,0.5);
+        margin: size(170) 0 0;
+        padding: 0 size(10);
+
+        .totaldet{
+            font-size: size(18);
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 size(16);
+        }
+
+        .btn_proceed{
+            font-size: size(18);
+            color: $white;
+            background-color: $gold;
+            padding: size(8) size(14);
+            border-radius: size(4);
+        }
+    }
+}
