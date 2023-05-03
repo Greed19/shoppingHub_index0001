@@ -28,13 +28,14 @@
                     overflow: hidden;
                     border-radius: size(10);
                     width: size(305);
+                    height: size(305);
                 }
             }
-            @media screen and (max-width: 576px) {
+            @media screen and (max-width: 600px) {
                 grid-template-columns: repeat(1, 1fr);
                 column-gap: size(20);
             }
-            @media screen and (min-width: 576px) {
+            @media screen and (min-width: 600px) {
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: size(20);
             }

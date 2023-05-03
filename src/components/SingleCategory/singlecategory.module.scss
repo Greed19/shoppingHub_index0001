@@ -54,8 +54,8 @@
             }
         }
         @media screen and (max-width: 576px) {
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: size(20);
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: size(20);            
         }
 
         @media screen and (min-width: 576px) {

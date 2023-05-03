@@ -5,6 +5,8 @@
     display: grid;
     column-gap: size(20);
     row-gap: size(40);
+    justify-items: center;
+    padding: 0 size(20);    
 
     .grid_item{
         position: relative;
@@ -43,14 +45,19 @@
             color: $primary-blue;
         }
     }
-    @media screen and (max-width: 576px) {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: size(20);
+    @media screen and (max-width: 520px) {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: size(20);        
     }
 
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 520px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: size(20);        
+    } 
+    
+    @media screen and (min-width: 780px) {
         grid-template-columns: repeat(3, 1fr);
-        column-gap: size(20);
+        column-gap: size(10);
     }
 
     @media screen and (min-width: 992px) {
