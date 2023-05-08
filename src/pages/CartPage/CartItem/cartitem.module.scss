@@ -60,13 +60,18 @@
 
         .item_price{
             font-size: size(15);
-            margin: 0 0 size(10);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+            margin: 0 0 size(10);            
+            display: flex;            
             
             .total{
                 margin: 0 size(100) 0 0;
+
+                @media screen and (max-width: 1300px) {
+                    display: block;
+                }
+            }
+            @media screen and (max-width: 1300px) {
+                display: block;
             }
         }
     }

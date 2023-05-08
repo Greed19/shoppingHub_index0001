@@ -11,7 +11,7 @@
     top: 30%;    
     right: size(60);
     background-color: $white;   
-    border-radius: size(10); 
+    border-radius: size(10);    
 
     .order_summary{
         font-size: size(20);
@@ -57,4 +57,10 @@
             border-radius: size(4);
         }
     }
+    
+        @media screen and (max-height: 1300px) {
+            position: relative !important;
+            right: 0;
+            top: size(50);
+        }
 }

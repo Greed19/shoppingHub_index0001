@@ -7,7 +7,6 @@
     width: 100vw;
     padding: 0 size(30);
     background-color: $ghost;
-
     .nav_locator{
         color: $second-blue;
         display: flex;
@@ -54,6 +53,10 @@
             display: none;
         }
 
+        @media screen and (max-width: 1300px) {
+            display: flex;
+            flex-direction: column !important;
+        }
     }
 
 

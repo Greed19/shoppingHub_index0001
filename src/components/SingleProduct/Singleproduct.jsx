@@ -55,9 +55,9 @@ const Singleproduct = () => {
     <section className={styles.single_modal_container}>
       <div className={styles.modal_container}>
       <AiFillCloseCircle className={styles.closeBtn} onClick={() => handleCloseModal()}/>
-        <aside className={styles.left_modal}> 
-          <img className={styles.single_img} src={modalData.images[0]} alt="" />
-        </aside>
+      <aside className={styles.left_modal}> 
+        <img className={styles.single_img} src={modalData.images[0]} alt="" />
+      </aside>
         <aside className={styles.right_modal}>
           <h4 className={styles.modal_title}>{modalData.title}</h4>
           <p className={styles.modal_desc}>{modalData.description}</p>
